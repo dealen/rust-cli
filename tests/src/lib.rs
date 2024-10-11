@@ -1,9 +1,7 @@
-use cli_calc::calc::Calc;
-
 #[cfg(test)]
 mod tests {
 
-    use super::*;
+    use cli_calc::calc::Calc;
 
     #[test]
     fn can_calculate_simple_addition() {

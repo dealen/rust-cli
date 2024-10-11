@@ -1,2 +1,3 @@
 [workspace]
 members = [ "api_handler", "cli-calc","cli-weather", "tests"]
+resolver = "1"

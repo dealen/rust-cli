@@ -1,0 +1,9 @@
+[package]
+name = "tests"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+cli-calc = { path = "../cli-calc" }
+api_handler = { path = "../api_handler" }
+cli-weather = { path = "../cli-weather" }

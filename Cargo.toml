@@ -1,2 +1,2 @@
 [workspace]
-members = [ "api_handler","cli-weather"]
+members = [ "api_handler", "cli-calc","cli-weather", "tests"]

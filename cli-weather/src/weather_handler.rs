@@ -7,6 +7,7 @@ pub struct WeatherHandler {
 }
 
 impl WeatherHandler {
+    #[must_use]
     pub fn new(key: String) -> WeatherHandler {
         WeatherHandler { key }
     }

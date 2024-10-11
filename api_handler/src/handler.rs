@@ -5,6 +5,7 @@ pub struct Handler {
 }
 
 impl Handler {
+    #[must_use]
     pub fn new(url: String) -> Handler {
         Handler { url }
     }

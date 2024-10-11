@@ -1,5 +1,5 @@
+#![warn(clippy::all, clippy::pedantic)]
 use clap::Parser;
-
 pub mod location;
 pub mod weather_handler;
 
@@ -8,12 +8,12 @@ struct Cli {
     city: String,
 }
 
-fn main() -> Result<(), Box<dyn std::error::Error>> {
+fn main() {
     let matches = Cli::parse();
 
     let city = matches.city;
 
-    let weather_handler = weather_handler::WeatherHandler::new("".to_string());
+    let weather_handler = weather_handler::WeatherHandler::new(String::new());
     let data = weather_handler.get_info_from_weather_api(&city).unwrap();
 
     let result = format!(
@@ -24,8 +24,6 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         "Wilgotnośc powietrza {}%. Siła wiatru {} km/h i podmuchy o sile {} km/h",
         data.current.humidity, data.current.wind_kph, data.current.gust_kph
     );
-    println!("{}", result);
-    println!("{}", result2);
-
-    Ok(())
+    println!("{result}");
+    println!("{result2}");
 }

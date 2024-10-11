@@ -1,3 +1,4 @@
+#![warn(clippy::all, clippy::pedantic)]
 use clap::Parser;
 use cli_calc::calc::Calc;
 
@@ -24,5 +25,5 @@ fn main() {
     let input = result.input;
 
     let calculate_result = Calc::calculate(&input);
-    println!("Result 2: {}", calculate_result);
+    println!("Result: {calculate_result}", );
 }

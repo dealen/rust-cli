@@ -8,7 +8,7 @@ pub struct WeatherHandler {
 
 impl WeatherHandler {
     pub fn new(key: String) -> WeatherHandler {
-        WeatherHandler { key: key }
+        WeatherHandler { key }
     }
 
     pub fn get_info_from_weather_api(

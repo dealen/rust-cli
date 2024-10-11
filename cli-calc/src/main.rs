@@ -1,7 +1,5 @@
-use calc::Calc;
 use clap::Parser;
-
-pub mod calc;
+use cli_calc::calc::Calc;
 
 #[derive(Parser)]
 struct Cli {
@@ -18,7 +16,7 @@ fn main() {
 
     let result = matches.unwrap();
 
-    if result.input.len() == 0 {
+    if result.input.is_empty() {
         println!("No input provided");
         return;
     }

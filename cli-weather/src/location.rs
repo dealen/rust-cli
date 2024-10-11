@@ -12,7 +12,6 @@ pub struct Location {
     pub localtime: String,
 }
 
-
 #[derive(Serialize, Deserialize, Debug)]
 pub struct Condition {
     pub text: String,

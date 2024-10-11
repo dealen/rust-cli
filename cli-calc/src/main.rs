@@ -10,14 +10,14 @@ struct Cli {
 
 fn main() {
     let matches = Cli::try_parse();
-    
+
     if matches.is_err() {
         println!("No input provided");
         return;
     }
 
-    let result = matches.unwrap(); 
-    
+    let result = matches.unwrap();
+
     if result.input.len() == 0 {
         println!("No input provided");
         return;
@@ -28,4 +28,3 @@ fn main() {
     let calculate_result = Calc::calculate(&input);
     println!("Result 2: {}", calculate_result);
 }
-

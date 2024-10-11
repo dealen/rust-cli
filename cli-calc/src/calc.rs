@@ -1,7 +1,6 @@
 pub struct Calc;
 
 impl Calc {
-
     pub fn calculate(input: &str) -> f64 {
         let mut num = String::new();
         let mut stack = Vec::new();

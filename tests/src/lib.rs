@@ -11,10 +11,10 @@ mod tests {
         // act
         let result = Calc::calculate(input);
 
-        // assert        
+        // assert
         assert_eq!(result, 4.0);
     }
-    
+
     #[test]
     fn can_calculate_simple_substraction() {
         // arrange
@@ -23,10 +23,10 @@ mod tests {
         // act
         let result = Calc::calculate(input);
 
-        // assert        
+        // assert
         assert_eq!(result, 2.0);
     }
-    
+
     #[test]
     fn can_calculate_simple_multiplication() {
         // arrange
@@ -35,10 +35,10 @@ mod tests {
         // act
         let result = Calc::calculate(input);
 
-        // assert        
+        // assert
         assert_eq!(result, 9.0);
     }
-    
+
     #[test]
     fn can_calculate_simple_division() {
         // arrange
@@ -47,10 +47,10 @@ mod tests {
         // act
         let result = Calc::calculate(input);
 
-        // assert        
+        // assert
         assert_eq!(result, 4.0);
     }
-    
+
     #[test]
     fn can_calculate_more_complex_problem() {
         // arrange
@@ -59,10 +59,10 @@ mod tests {
         // act
         let result = Calc::calculate(input);
 
-        // assert        
+        // assert
         assert_eq!(result, 4.0);
     }
-    
+
     #[test]
     fn can_calculate_more_complex_problem_with_brakcets() {
         // arrange
@@ -71,10 +71,10 @@ mod tests {
         // act
         let result = Calc::calculate(input);
 
-        // assert        
+        // assert
         assert_eq!(result, 7.5);
     }
-    
+
     #[test]
     fn can_calculate_more_complex_problem_with_brakcets_and_power() {
         // arrange
@@ -83,7 +83,7 @@ mod tests {
         // act
         let result = Calc::calculate(input);
 
-        // assert        
+        // assert
         assert_eq!(result, 16.0);
     }
 }

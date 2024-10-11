@@ -12,6 +12,9 @@ impl WeatherHandler {
         WeatherHandler { key }
     }
 
+    /// # Errors
+    /// 
+    /// Returns a error when there is issue with request handler or when parsing request body
     pub fn get_info_from_weather_api(
         &self,
         city: &str,

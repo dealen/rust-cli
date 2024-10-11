@@ -10,6 +10,9 @@ impl Handler {
         Handler { url }
     }
 
+    /// # Errors
+    /// 
+    /// Returns a Error when there is some issue with the request
     pub fn get_resposnse(&self) -> Result<String, reqwest::Error> {
         info!("Sending request to {}", self.url);
 
